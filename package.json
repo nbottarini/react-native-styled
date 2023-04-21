@@ -1,0 +1,55 @@
+{
+  "name": "@nbottarini/react-native-styled",
+  "version": "0.8.0",
+  "description": "React native lightweight styled components",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Nicolás Bottarini <nicolasbottarini@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/nbottarini/react-native-styled#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nbottarini/react-native-styled.git"
+  },
+  "keywords": [
+    "styles",
+    "react-native",
+    "components"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint . && tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^3.2.0",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.4",
+    "@types/react": "^18.0.37",
+    "@types/react-native": "^0.71.6",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.38.0",
+    "react": "^18.2.0",
+    "react-native": "0.71.6",
+    "rollup": "^2.79.1",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-exclude-dependencies-from-bundle": "^1.1.22",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^5.0.4"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">= 16.0.0"
+  }
+}
