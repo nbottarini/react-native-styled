@@ -26,7 +26,7 @@ export default [
             excludeDependenciesFromBundle({ peerDependencies: true, dependencies: true }),
             resolve(),
             commonjs(),
-            typescript({ tsconfig: './tsconfig.json' }),
+            typescript({ tsconfig: './tsconfig.json', emitDeclarationOnly: true, declaration: true }),
             terser(),
         ],
     },
